@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 import uuid
 from utils import calculate_calorie_deficit, save_user_data, user_exists
-
+import os
+print("Current directory:", os.getcwd())
 # Load existing data
 try:
     user_data = pd.read_csv("user_data.csv")
